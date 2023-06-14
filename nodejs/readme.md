@@ -1,0 +1,2 @@
+Setup:
+```npm install openai```
