@@ -14,7 +14,7 @@ chat_completion = openai.ChatCompletion.create(
     ]
 )
 
-print(f"GPT-3 answer: {chat_completion.choices[0].message.content}")
+print(f"GPT-3 answer:   {chat_completion.choices[0].message.content}")
 
 # OpenAI Completion
 completion = openai.Completion.create(

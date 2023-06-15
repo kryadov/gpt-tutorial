@@ -8,7 +8,9 @@ completion_not_strict = openai.ChatCompletion.create(
     messages=[
         {"role": "user", "content": "Is there life on Mars?."}
     ],
-    temperature=1
+    temperature=1,
+    presence_penalty=2,
+    frequency_penalty=2
 )
 
 completion_strict = openai.ChatCompletion.create(
@@ -19,7 +21,7 @@ completion_strict = openai.ChatCompletion.create(
     temperature=0
 )
 
-print(f"Strict answer: {completion_strict.choices[0].message.content}")
-print(f"S-Fict answer: {completion_not_strict.choices[0].message.content}")
+print(f"Strict     answer: {completion_strict.choices[0].message.content}")
+print(f"Not strict answer: {completion_not_strict.choices[0].message.content}")
 
 # TODO: read about max_token and limiting answer - remember long answer of one-simple-question
