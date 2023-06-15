@@ -5,6 +5,6 @@ Tutorial flow located in `python` folder.
 For python code we need to set 
 1. OpenAPI secret API key to `OPENAI_API_KEY` 
 2. Value of `__Secure-1PSID` from https://bard.google.com/ cookies to `_BARD_API_KEY`
-env variables.
+env variables. You should be authorized on web site and accept policy.
 
 In `java` and `nodejs` folder located templates with related libraries examples.
