@@ -1,7 +1,7 @@
 # GPT Tutorial
 Please use Python 3.11+ or Java 11+ or NodeJS 18+.
 
-Tutorial flow located in `python` folder.
+Tutorial flow located in `python` folder in numeric order (1, 2 ... 5).
 For python code we need to set 
 1. OpenAPI secret API key to `OPENAI_API_KEY` 
 2. Value of `__Secure-1PSID` from https://bard.google.com/ cookies to `_BARD_API_KEY`
