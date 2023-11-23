@@ -1,13 +1,14 @@
 import os
-import openai
+from openai import OpenAI
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
 
 first_question = "Is there life on Mars?"
 second_question = "When last research was performed?"
 
-# OpenAI ChatCompletion
-chat_completion = openai.ChatCompletion.create(
+chat_completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
     # model="gpt-4" # https://openai.com/waitlist/gpt-4-api - Thank you for joining the waitlist to build with GPT-4!
     messages=[

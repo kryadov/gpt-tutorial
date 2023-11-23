@@ -1,9 +1,13 @@
 import os
 import openai
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+from openai import OpenAI
 
-completion_not_strict = openai.ChatCompletion.create(
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
+
+completion_not_strict = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
         {"role": "user", "content": "Is there life on Mars?."}
@@ -13,7 +17,7 @@ completion_not_strict = openai.ChatCompletion.create(
     frequency_penalty=2
 )
 
-completion_strict = openai.ChatCompletion.create(
+completion_strict = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
         {"role": "user", "content": "Is there life on Mars?."}
