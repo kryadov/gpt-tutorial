@@ -1,17 +1,15 @@
-import { Configuration, OpenAIApi } from "openai";
+import OpenAI from 'openai'
 
-const configuration = new Configuration({
+const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openai = new OpenAIApi(configuration);
-
 (async () => {
-    const {data} = await openai.createChatCompletion({
+    const chatCompletion =  await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: "Hello world" }],
+        messages: [{ role: "user", content: "Is there life on Mars?" }],
     })
 
     // Print the answer
-    console.log(data.choices);
+    console.log(chatCompletion.choices[0].message.content);
 })()

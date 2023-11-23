@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "bard-ai": "^1.2.0",
-    "openai": "^3.3.0"
+    "openai": "^4.20.0"
   }
 }
