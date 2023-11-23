@@ -8,3 +8,6 @@ For python code we need to set
 env variables. You should be authorized on web site and accept policy.
 
 In `java` and `nodejs` folder located templates with related libraries examples.
+
+## Additionall resuources
+* For Java you can use https://github.com/langchain4j/langchain4j
