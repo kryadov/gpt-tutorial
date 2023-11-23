@@ -20,7 +20,7 @@ chat_completion = client.chat.completions.create(
 print(f"GPT-3 answer:   {chat_completion.choices[0].message.content}")
 
 # OpenAI Completion
-completion = openai.Completion.create(
+completion = client.completions.create(
     model="text-davinci-003",
     prompt="Is there life on Mars?"
 )
