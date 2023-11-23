@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-gpt-tutorial",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "openai": "node openai.js",
+    "bard": "node bard.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bard-ai": "^1.2.0",
+    "openai": "^3.3.0"
+  }
+}
