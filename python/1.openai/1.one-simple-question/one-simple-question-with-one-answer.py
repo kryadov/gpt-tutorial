@@ -9,7 +9,7 @@ client = OpenAI(
 # Full list of models - https://platform.openai.com/docs/models/overview
 
 # OpenAI ChatCompletion
-model="gpt-3.5-turbo"
+model = "gpt-3.5-turbo"
 # model = "gpt-4-1106-preview"
 chat_completion = client.chat.completions.create(
     model=model,
