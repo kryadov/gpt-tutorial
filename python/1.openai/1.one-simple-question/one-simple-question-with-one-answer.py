@@ -9,15 +9,16 @@ client = OpenAI(
 # Full list of models - https://platform.openai.com/docs/models/overview
 
 # OpenAI ChatCompletion
+model="gpt-3.5-turbo"
+# model = "gpt-4-1106-preview"
 chat_completion = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    # model="gpt-4-1106-preview"
+    model=model,
     messages=[
         {"role": "user", "content": "Is there life on Mars?"}
     ]
 )
 
-print(f"GPT-3 answer:   {chat_completion.choices[0].message.content}")
+print(f"{model} answer:   {chat_completion.choices[0].message.content}")
 
 # OpenAI Completion
 completion = client.completions.create(
