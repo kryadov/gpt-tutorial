@@ -13,5 +13,5 @@ chat_completion = client.chat.completions.create(
     ]
 )
 
-print(f"Role: {completion.choices[0].message.role}")
-print(f"Answer: {completion.choices[0].message.content}")
+print(f"Role: {chat_completion.choices[0].message.role}")
+print(f"Answer: {chat_completion.choices[0].message.content}")
