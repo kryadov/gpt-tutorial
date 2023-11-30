@@ -1,4 +1,6 @@
 # GPT Tutorial
+See lab video: https://t.me/youshouldknowit/1333
+
 Please use Python 3.11+ or Java 11+ or NodeJS 18+.
 
 Tutorial flow located in `python` folder in numeric order (1, 2 ... 5).
